@@ -1,3 +1,12 @@
+Key features:
+
+The goal of this project is build a simple client-server application that sends items to recipients on a list. A key aspect of this process is that within the server there is only one 32 byte value that is allowed to be stored in the server memory. This 32 byte value has to be enough for the server to be able to determine who is on the list.
+
+Overview:
+- The client sends a name from the list, along with a Merkle proof that is created
+- The server confirms whether the provided name is in the list via a Merkle Tree root.
+
+-------Original Readme Below------
 # Gift List
 
 To get started with the repository, clone it and then run `npm install` in the top-level directory to install the depedencies.
